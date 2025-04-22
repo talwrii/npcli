@@ -2,25 +2,13 @@
 Interact with Python's numpy package from the command line. Useful as part of pipelines.
 
 # Attribution
-
 Influenced by and liberally taking ideas from from Wes Turner's [pyline](https://github.com/westurner/pyline) utility.
 
+Additionally, `perl` has a number of very useful command-line options for doing quick ad hoc processing from the command-line which influenced his tool
+
+
 # Motivation
-
-Command line pipelines are wonderful things. Some nice properties include:
-
-* Complete searchable history of everything you have run
-* Being able to use commands you already know instead of libraries that may not exist
-* Being able to compose disparate commands through string input and output
-* Completion
-
-However the command line is sometimes slightly... lacking. Particularly when it comes to
-things like maths. There are ad-hoc, single purpose commands that can help, things like
-`feedgnuplot` or `sum` or similar, but they will always only solve one problem.
-
-Here we try to solve a general class of problems by welding python (any numpy)
-to the command line so that anything you can do in python can be done
-in a way that easily interacts with a the command line.
+The command-line is useful. It would be nice if one could bring a little Python and numpy to the command line.
 
 # Examples
 
@@ -52,7 +40,6 @@ npcli --name one <(seq 100) --name two <(seq 201 300) 'one + two'
 ```
 
 # Just open a file for goodness sake
-
 It is very easy to do more on the command line that you should.
 Most programming languages are Turing-Complete and everything that is done
 here can be done in a python file with subprocesses. Above a certain size one-liners
@@ -124,7 +111,7 @@ This can be circumvented by using the `-f` flag in preference to positional argu
 However, we still allow positional arguments in the interest of discoverability.
 I'm open to this being a bad decision.
 
-# Contributing
+# Hacking
 
 There are unit tests: you can run them with
 
@@ -137,3 +124,17 @@ This run the tests with `tox` for a quicker test run use:
 ```
 nosetests test
 ```
+
+# Supporting
+If you like this tool, you can incentivise me to work on it by giving me money ($2 dollars maybe) on my ko-fi.
+
+You could also have a look at some of the work that I am doing on reading, research and note taking and see if any of it interests you. You could read [Better note taking with Obsidian](https://readwithai.substack.com/p/making-better-notes-with-obsidian) on my blog where I have written a lot about note taking and Obsidina.
+
+# About me
+I am **@readwithai**. I make tools for reading, research and agency sometimes using [Obsidian](https://readwithai.substack.com/p/what-exactly-is-obsidian).
+
+Along the way, I tend to produce a [stream of small tools](https://readwithai.substack.com/p/my-productivity-tools) such as this that you may find useful.
+
+You can follow me on [X](https://x.com/readwithai) where I often write about tooling like this or my [blog](https://readwithai.substack.com/) where I tend to write more about reading and research.
+
+![logo](logo.png)

@@ -5,3 +5,4 @@ build/
 .tox
 .coverage
 coverage.xml
+token

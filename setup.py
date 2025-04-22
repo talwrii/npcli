@@ -16,11 +16,11 @@ class ToxTest(TestCommand):
 
 setuptools.setup(
     name='npcli',
-    version=0.1,
-    author='Tal Wrii',
+    version="1.0.0",
+    author='@readwithai',
     author_email='talwrii@gmail.com',
     description='',
-    license='GPLv3',
+    license='MIT',
     keywords='',
     url='',
     install_requires=['numpy'],
